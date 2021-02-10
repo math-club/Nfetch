@@ -25,6 +25,8 @@ sys_info = (
   "Resolution: 320x240",
   "MCU: " + ("STM32F730V8T6" if uname["machine"] == "NumWorks N110" else "STM32F412"),
   "Memory: " + ("8Mo" if uname["machine"] == "NumWorks N110" else "1Mo")
+  "RAM: " + ("256Ko" if uname["machine"] == "NumWorks N110" else "1Mo")
+  "Screen: " + ("IPS-LCD" if uname["machine"] == "NumWorks N110" else "TFT-LCD")
 )
 
 for line, info in zip(ASCII_LOGO.split("\n"), sys_info):
