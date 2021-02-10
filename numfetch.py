@@ -4,7 +4,7 @@ import time
 
 uname = os.uname()
 
-ASCII_LOGO = """                 
+ASCII_LOGO_OMEGA = """                 
   %%%%%%%%%%%    
  %%%        %%%  
 %%%          %%  
@@ -30,6 +30,6 @@ sys_info = (
 )
 
 def numfetch():
-  for line, info in zip(ASCII_LOGO.split("\n"), sys_info):
+  for line, info in zip(ASCII_LOGO_OMEGA.split("\n"), sys_info):
     print(line + info)
  
