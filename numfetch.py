@@ -17,7 +17,7 @@ ASCII_LOGO_OMEGA = """
                  
 """
 
-ASCII_LOGO_EPSILON = """
+ASCII_LOGO_EPSILON = """                 
      %%%%%%%      
     %%     //     
      %%%%///      
