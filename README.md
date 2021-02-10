@@ -1,4 +1,4 @@
-# Nfetch
+# Nfetch
 
 Tiny system info for [Omega](https://github.com/Omega-Numworks/Omega) operating systems.
 
