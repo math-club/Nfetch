@@ -1,3 +1,5 @@
+__author__ = ("Tim-ats-d@github.com", "The-ZmaZe@github.com")
+
 import os
 import time
 
