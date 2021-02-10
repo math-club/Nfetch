@@ -13,7 +13,27 @@ ASCII_LOGO_OMEGA = """
 %%%%%%   %%%%%%  
                  
                  
+                 
+                 
 """
+
+ASCII_LOGO_EPSILON = """
+     %%%%%%%      
+    %%     //     
+     %%%%///      
+    %%     //     
+     %%%%%%%      
+                  
+                  
+                  
+                  
+                  
+"""
+
+ASCII_LOGO = {
+  "omega": ASCII_LOGO_OMEGA,
+  "epsilon": ASCII_LOGO_EPSILON,
+}
 
 sys_info = (
   uname["sysname"],
@@ -29,7 +49,7 @@ sys_info = (
   "Screen: " + ("IPS-LCD" if uname["machine"] == "NumWorks N0110" else "TFT-LCD")
 )
 
-def numfetch():
-  for line, info in zip(ASCII_LOGO_OMEGA.split("\n"), sys_info):
+def numfetch(ascii:str="omega"):
+  for line, info in zip(ASCII_LOGO[ascii].split("\n"), sys_info):
     print(line + info)
  
