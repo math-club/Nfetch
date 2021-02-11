@@ -51,7 +51,7 @@ sys_info = (
   "Screen: " + ("IPS-LCD" if uname["machine"] == "NumWorks N0110" else "TFT-LCD")
 )
 
-def numfetch(ascii:str="omega"):
+def numfetch(ascii: str = "omega"):
   for line, info in zip(ASCII_LOGO[ascii].split("\n"), sys_info):
     print(line + info)
  
